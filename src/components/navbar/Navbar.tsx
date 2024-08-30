@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Navbar: React.FC = () => {
   // State to manage the visibility of the menu
@@ -58,8 +59,8 @@ const Navbar: React.FC = () => {
         {/* Sign in / Sign up Buttons */}
         <div className="hidden md:flex md:ml-6 lg:ml-0 lg:flex">
           <div className='flex'>
-            <button className='buttonText buttonBorder mr-8'>Sign in</button>
-            <button className='buttonText buttonBorder buttonBg'>Sign up</button>
+            <button className='buttonText buttonBorder mr-8'><Link href='login'>Sign in</Link></button>
+            <button className='buttonText buttonBorder buttonBg'><Link href='sign-up'>Sign up</Link></button>
           </div>
         </div>
       </div>
