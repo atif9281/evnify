@@ -22,24 +22,38 @@ export default function Signup() {
             <div>
                 <div className=' authCard navbarBg xs:mt-5 xs:pt-2 xs:pb-4 xs:px-3 sm:mt-10 sm:pt-4 sm:pb-8 sm:px-5 md:mt-15 md:pt-6 md:pb-12 md:px-8  lg:mt-20 lg:pt-7  lg:pb-16 lg:px-10 rounded-xl'>
                     <div className='flex flex-col'>
-                        <h1 className='largeText buttonText mb-8'>Sign up</h1>
-                        <p className='para mb-8'>Enter your credentials to continue</p>
-                        <div className='flex flex-row'>
-                            <div className='w-6/12 mr-6'>
-                            <input type="text" className="custom-input mb-6" placeholder="Enter your name" />
-
+                        <h1 className='largeText buttonText xs:mb-8 sm:mb-8 md:mb-8 lg:mb-8'>Sign up</h1>
+                        <p className='para mb-8 '>Enter your credentials to continue</p>
+                        <div className='flex flex-col sm:flex-row'>
+                            <div className="w-full sm:w-6/12 sm:mr-6 mb-6">
+                                <input
+                                    type="text"
+                                    className="custom-input"
+                                    placeholder="Enter your name"
+                                />
                             </div>
-                            <div className='w-6/12'>
-                            <input type="text" className="custom-input mb-6" placeholder="Enter your name" />
+                            <div className="w-full sm:w-6/12 mb-6">
+                                <input
+                                    type="text"
+                                    className="custom-input"
+                                    placeholder="Enter your name"
+                                />
                             </div>
                         </div>
-                        <div className='flex flex-row'>
-                            <div className='w-6/12 mr-6'>
-                            <input type="text" className="custom-input mb-6" placeholder="Enter your name" />
-
+                        <div className='flex flex-col sm:flex-row'>
+                            <div className="w-full sm:w-6/12 sm:mr-6 mb-6">
+                                <input
+                                    type="text"
+                                    className="custom-input"
+                                    placeholder="Enter your name"
+                                />
                             </div>
-                            <div className='w-6/12'>
-                            <input type="text" className="custom-input mb-6" placeholder="Enter your name" />
+                            <div className="w-full sm:w-6/12 mb-6">
+                                <input
+                                    type="text"
+                                    className="custom-input"
+                                    placeholder="Enter your name"
+                                />
                             </div>
                         </div>
                         <div className="relative w-full">
