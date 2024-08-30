@@ -14,7 +14,7 @@ const Login: React.FC = () => {
   return (
     <>
       <div>
-        <div className='mt-20 authCard navbarBg pt-24 pb-20 px-10 rounded-xl'>
+        <div className=' authCard navbarBg xs:mt-5 xs:pt-2 xs:pb-4 xs:px-3 sm:mt-10 sm:pt-4 sm:pb-8 sm:px-5 md:mt-15 md:pt-6 md:pb-12 md:px-8  lg:mt-20 lg:pt-7  lg:pb-16 lg:px-10 rounded-xl'>
           <div className='flex flex-col'>
             <h1 className='largeText buttonText mb-4'>Hi, Welcome Back</h1>
             <p className='para mb-8'>Enter your credentials to continue</p>
@@ -50,7 +50,7 @@ const Login: React.FC = () => {
             <button className='block buttonTextS buttonBorderL buttonBgL mb-4'>Login</button>
             <div className='mb-10 flex justify-center items-center'> <p className='checkBoxFieldW'>dont have acount? <a className='dangerW'>signup</a> </p></div>
             <div className="separator mb-9">
-              <span>or login with</span>
+              <span className='px-3'> or login with </span>
             </div>
             <div className='flex flex-row justify-between items-center gap-8'>
               <button className='buttonBorderL w-6/12 flex justify-center'>

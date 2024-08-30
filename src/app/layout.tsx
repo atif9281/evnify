@@ -32,7 +32,7 @@ export default function RootLayout({
             <Navbar />
 
           </div>
-          <main className="flex-grow min-h-[80%] backGroundColor flex justify-center">
+          <main className="flex-grow min-h-[80%] backGroundColor flex justify-center sm:pb-5 md:pb-10 lg:pb-20">
             {children}
           </main>
         </div>
