@@ -297,6 +297,10 @@ button.buttonBorderL {
   }
 
   @media (max-width: 640px) { 
+
+    
+
+
     .authCard {
         margin: 10px auto;
         padding: 10px;
