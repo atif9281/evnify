@@ -2,32 +2,296 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.largeText {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.backGroundColor {
+    background-color: #E3E7EC;
+
+}
+
+.navbarBg {
+    background: #FFFFFF;
+
+}
+
+.buttonText {
+    color: #533C56;
+}
+
+.buttonTextS {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+
+}
+
+.para {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #313131;
+    opacity: 0.75;
+    /* Corrected opacity value */
+}
+
+
+.buttonBg {
+    background-color: #533C56;
+    color: #FFFFFF;
+}
+
+.buttonBorder {
+    border-color: #533C56;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+
+
+    padding: 10px 32px 10px 32px;
+
+
+
+}
+
+button.buttonBorderL {
+    padding: 10px 32px;
+    border-color: #515DEF !important; /* Force the border color */
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
   }
+
+.navbarText {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20.57px;
+
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.authCard {
+    width: 554px;
+    min-height: 720px;
+
+
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.customCheckBox {
+    width: 18px;
+    height: 18px;
+    gap: 0px;
+    border: 1px;
+
+}
+
+/* Hide the default checkbox */
+.custom-checkbox {
+    opacity: 0;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+
+    opacity: 0px;
+
+}
+
+/* Create the custom checkbox container */
+.custom-checkbox-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Style the custom checkbox */
+.checkmark {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #313131;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+
+}
+
+/* Style the custom checkbox when checked */
+.custom-checkbox:checked+.checkmark {
+    background-color: #533C56;
+    /* Background color when checked */
+}
+
+/* Add a checkmark when the checkbox is checked */
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox:checked+.checkmark::after {
+    display: block;
+
+    width: 8px;
+    height: 12px;
+}
+
+
+.checkBoxField {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #313131;
+
+
+}
+
+.checkBoxFieldW {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #313131;
+
+
+}
+
+.custom-input {
+    height: 56px;
+    border: 1px solid #79747E;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #1C1B1F;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+
+.custom-input-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.custom-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #1C1B1F;
+}
+
+.custom-input {
+    width: 100%;
+    border: 1px solid #79747E;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #1C1B1F;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.danger {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #FF8682;
+
+
+}
+
+.dangerW {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #FF8682;
+
+
+}
+
+.buttonBgL {
+    background-color: #533C56;
+    color: #FFFFFF;
+}
+
+.buttonBorderL {
+    border-color: #533C56;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+
+
+    padding: 10px 32px 10px 32px;
+
+
+
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
   }
-}
+  
+  .separator::before,
+  .separator::after {
+    content: '';
+    flex-grow: 1;
+    background-color: #d3d3d3; /* Line color */
+    height: 1px; /* Line thickness */
+  }
+  
+  .separator span {
+    font-size: 14px; /* Adjust the font size as needed */
+    color: #6c757d; /* Text color */
+    white-space: nowrap;
+  }
+
+  .input-container {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  .floating-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .floating-label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: #777;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  .floating-input:focus ~ .floating-label,
+  .floating-input:not(:placeholder-shown) ~ .floating-label {
+    top: -10px;
+    left: 12px;
+    font-size: 12px;
+    color: #000;
+  }
+  

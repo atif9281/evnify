@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar/Navbar";
 
+// Initialize the Inter font
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,7 +18,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"></link>
+
+      </head>
+      <body className={inter.className}>
+        <div className="flex flex-col min-h-screen">
+          <div className="min-w-full h-20">
+            <Navbar />
+
+          </div>
+          <main className="flex-grow min-h-[80%] backGroundColor flex justify-center">
+            {children}
+          </main>
+        </div>
+      </body>
     </html>
   );
 }
